@@ -1,3 +1,5 @@
+moment.locale("de");
+
 # These are the columns that YNAB expects
 ynab_cols = ['Date','Payee','Category','Memo','Outflow','Inflow']
 
@@ -18,7 +20,7 @@ numberfy = (val) ->
     val
 
 # Uses moment.js to parse and format the date into the correct format
-parseDate = (val) -> moment(val).format('DD.MM.YYYY') if val && val.length > 0
+parseDate = (val) -> moment(val).format('MM/DD/YYYY') if val && val.length > 0
 
 
 # This class does all the heavy lifting.
