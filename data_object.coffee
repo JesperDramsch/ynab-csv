@@ -1,5 +1,3 @@
-moment.lang("de");
-
 # These are the columns that YNAB expects
 ynab_cols = ['Date','Payee','Category','Memo','Outflow','Inflow']
 
